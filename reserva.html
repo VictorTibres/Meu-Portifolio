@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de reserva de viagem</title>
+
+<style>
+
+input[type="submit"] {
+    font-family: 'Arial Black', sans-serif;
+    background-color: #4CAF50; 
+    color: white;
+}
+input[type="submit"]:hover {
+    background-color: green; 
+}
+</style>
+
+
+</head>
+
+<body>
+
+<p>
+Formulário de reserva de viagem:
+</p>
+
+<fieldset>
+<p>Nome:<input type="text"></p>
+<p>Email: <input type="text"></textarea> </p>
+<p>Serviços Desejados: <label for="Escolha um serviço:"></label></p>
+
+<select
+name="serviço" id="serviço">
+<option value="Passagens">Compra de passagens</option>
+<option value="Hospedagem">Reserva de hospedagem</option>
+<option value="Veiculos">Aluguel de veículos</option>
+</select> 
+
+</fieldset>
+<p>Escolha a forma de pagamento:</p>
+
+<fieldset>
+
+<label>
+    <input type="radio" name="Pagemento" value="Cartão de Credito">
+    Cartão de Crédito
+</label>
+<br>
+
+<label>
+    <input type="radio" name="Pagemento" value="Boleto">
+    Boleto
+</label>
+<br>
+
+<label>
+    <input type="radio" name="Pagemento" value="Pix">
+    PIX
+</label>
+<br>
+<p> Prazo de pagamento:</p>
+
+<label for="Prazo de pagamento"> </label>
+
+<select name="Prazo de pagamento:" id="Parcelamento">
+
+<option value="À vista">À vista</option>
+<option value="Cinco vezes sem juros">Cinco vezes sem juros</option>
+<option value="Dez vezes com juros">Dez vezes com juros</option>
+
+</select>
+
+</fieldset>
+
+<fieldset>
+<p>Observações:</p>
+<textarea name="Observações" id=""></textarea>
+</fieldset>
+
+<fieldset>
+
+    <input type="submit" value="Enviar Reserva"  id="reserva">
+
+
+</fieldset>
+
+
+</form>
+
+</body>
+</html>
