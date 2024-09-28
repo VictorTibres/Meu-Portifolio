@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão de Festas Celebramus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        
+        body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A8D99B;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #2C3E50, #4A701C);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.8em;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.carousel {
+    max-width: 100%;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.carousel-item {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item.active {
+    display: block; 
+    opacity: 1;
+}
+
+.carousel img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 20px;
+    object-fit: cover; 
+}
+
+
+@media (min-width: 769px) {
+    .carousel img {
+        max-width: 70%; 
+        margin: 0 auto; 
+        display: block; 
+    }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 35px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .prev, .next {
+        font-size: 25px; 
+    }
+}
+
+
+.contact-info {
+    background-color: #4A701C;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 2.8em;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+.map {
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #2C3E50;
+    color: #FFD700;
+    font-size: 1.2em;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; 
+    }
+    .carousel img {
+        max-height: 300px; 
+    }
+    .contact-info h2 {
+        font-size: 2em; 
+    }
+    .contact-info p {
+        font-size: 1em; 
+    }
+    .prev, .next {
+        font-size: 25px; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Salão de Festas Celebramus</h1>
+        <h2>Celebre com Estilo, festeje com ALEGRIA</h2>
+    </header>
+
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="imagemSalão/IMG-20240722-WA0118.jpg" alt="Imagem do Salão 1">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0119.jpg" alt="Imagem do Salão 2">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0120.jpg" alt="Imagem do Salão 3">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0121.jpg" alt="Imagem do Salão 121">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0122.jpg" alt="Imagem do Salão 122">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0123.jpg" alt="Imagem do Salão 123">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0124.jpg" alt="Imagem do Salão 124">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0125.jpg" alt="Imagem do Salão 125">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0126.jpg" alt="Imagem do Salão 126">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0127.jpg" alt="Imagem do Salão 127">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0128.jpg" alt="Imagem do Salão 128">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0129.jpg" alt="Imagem do Salão 129">
+        </div>
+        <div class="carousel-item">
+            <img src="imagemSalão/IMG-20240722-WA0130.jpg" alt="Imagem do Salão 130">
+        </div>
+        
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <section class="contact-info">
+        <h2>Agende sua visita!</h2>
+        <h3>Informações para contato:</h3>
+
+        <p>Email: <a href="mailto:contato@salão.com">victortibresviana@gmail.com</a></p>
+        <p>Telefone: <a href="tel:+5541999999999">(41) 9901-7185</a></p>
+        <p>Endereço: Rua Mato Grosso, 9703 - Campo Largo - PR</p>
+        <p><strong>ESTAMOS LOCALIZADOS A MENOS DE 5 KM DA UNIVERSIDADE POSITIVO!</strong></p>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.123456789!2d-49.3931801!3d-25.4600866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd1ddca86ea4a7%3A0xd71c42ce7bc544e6!2sR.+Mato+Grosso%2C+9703+-+Vila+Torres+I%2C+Campo+Largo+-+PR%2C+83609-050!5e0!3m2!1spt-BR!2sbr!4v1234567890" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">Salão de Festas Celebramus</div>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel-item');
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === currentSlide) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function changeSlide(n) {
+            showSlide(currentSlide + n);
+        }
+
+      
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
