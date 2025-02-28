@@ -1,8 +1,3 @@
-// exercicio 5 nomes, 
-//acrescentar o nome "monica" XXX 
-// e tire o ultimo elemento do array XXX
-//encontre a posiçao do samuel XXX
-//trocar o nome do manuel pelo emanuel
 
 var nomes = ["Guilherme","Manuel","Samuel","Davi","João"];
 
@@ -20,9 +15,7 @@ nomes.splice(2, 1, "Emanuel");
 
 console.log(nomes);
 
-
-//
-
+----
 
 var pessoa = ["Eduardo","Joana","Wallace","Rosana"];
 var gerente = ["Davi","Manuela"];
@@ -36,7 +29,7 @@ var empresa = pessoa.concat(gerente);
 console.log(empresa);
 
 
-// meses do ano, dividir em trimestres, base no array dos meses , dividir em trimestres
+----
 
 var trimestres = [];
 
